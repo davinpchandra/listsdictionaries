@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Dec  2 14:19:09 2019
+
+@author: davinpc
+"""
+stock = 5
+prices = {'banana' : 4, 'apple' : 2, 'orange' : 1.5, 'pear' : 3}
+for fruit, price in prices.items():
+    print(fruit)
+    print('Price:',price)
+    print('Stock:',stock)
+    
+total = 0
+print(" ")
+for fruit, price in prices.items():
+    print(fruit, ':', price*stock)
+    total = total + price*stock
+    
+print(total)
